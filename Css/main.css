@@ -1,5 +1,63 @@
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
+
+}
+
+:root {
+    --background: black;
+    --secondary-bg: gray;
+    --text-color: white;
+    --button-bg: lime;
+    --button-border: green;
+    --btn-secondary-border: black;
+
+}
+
+font {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font: inherit;
+    background-color: var(--background);
+    color: d;
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: var(--secondary-bg);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: var(--button-bg);
+    border: 1px solid var(--button-border);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: var(--text-color);
+    outline: none;
+}
+
+.btn:hover {
+   border-color: var(--btn-secondary-border);
+
 }
