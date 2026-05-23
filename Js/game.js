@@ -1,5 +1,5 @@
-const textElement = document.getElementById('text');
-const optionButtons = document.getElementById('option-buttons');
+const textElement = document.getElementById('text')
+const optionButtonsElement = document.getElementById('option-buttons')
 
 
 let state = {}
@@ -13,22 +13,25 @@ function startGame() {
 }
 
 function showTextNode(textNodeIndex) {
-    const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
-    textElement.innerText = textNode.text
-    while (optionButtonsElement.firstChild) {
+  const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
+  textElement.innerText = textNode.text
+  while (optionButtonsElement.firstChild) {
     optionButtonsElement.removeChild(optionButtonsElement.firstChild)
-    }
+  }
 
-    textNode.option.forEach(option => {
-        if(showOption(option)) {
-            const button = document.createElement('button')
-            button.innerText = option.text
-            button.classList.add('btn')
-            button.addEventListener('click', () =>  selectOption(option))
-            optionButtonsElement.appendChild(button)
-        }
-    })
+  textNode.options.forEach(option => {
+    if (showOption(option)) {
+      const button = document.createElement('button')
+      button.innerText = option.text
+      button.classList.add('btn')
+      button.addEventListener('click', () => selectOption(option))
+      optionButtonsElement.appendChild(button)
+    }
+  })
 }
+
+
+
 
 function showOption (option) {
     return true
@@ -56,7 +59,26 @@ const textNodes = [
         ]
     },
     {
-        id: 2 
+        id: 2,
+        nextText: 'testitesti',
+        options: [
+            {
+                text: 'vaihda tavara itemiin',
+                requiredState: (currentState) => currentState.Tavara,
+                setState: { tavara: false, item: true },
+                nextText: 3,
+            },
+            {
+                text: 'vaihda tavara tokeniin',
+                requiredState: (currentState) => currentState.Tavara,
+                setState: { tavara: false, token: true },
+                nextText: 3,
+            },
+            {
+                text: 'Älä vaihda mitään',
+                nextText: 3,
+            }  
+            ]
     }
 ]
 
