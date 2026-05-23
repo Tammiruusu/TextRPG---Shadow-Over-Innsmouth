@@ -32,27 +32,37 @@ function showTextNode(textNodeIndex) {
 
 
 
-
+//Tämä näyttää joko NULLIN, jos sinulla ei ole tarvittavaa tavaraa tai näyttää 
+//optionit jos sinulla on tarvittavat tavarat. 
 function showOption (option) {
-    return true
+    return option.requiredState == null || option.requiredState(state)
 }
 
-function selectOption(option) {
 
+//Tällä saadaan tavarat mukaan STATEEN ja jos halutaan pois sulkea joitain 
+//OPTIONEJA, jos ei ole tarvittavaa tavaraa mukana. 
+function selectOption(option) {
+    const nextTextNodeId = option.nextText
+    if(nextTextNodeId <= 0) {
+        return startGame()
+    }
+    //state ylikirjoittaa setStaten, mikäli saat tavaran tai menetätä tavaran
+    state = Object.assign(state, option.setState)
+    showTextNode(nextTextNodeId)
 }
 
 const textNodes = [
     {
         id: 1,
-        text: 'testi',
+        text: 'edessässi on tavara',
         options: [
             {
-                text: 'option1',
+                text: 'ota tavara',
                 setState: {Tavara: true},
                 nextText: 2,
             },
             {
-                text: 'option2',
+                text: 'älä ote tavaraa',
                 nextText: 2,
             }
 
@@ -60,7 +70,7 @@ const textNodes = [
     },
     {
         id: 2,
-        nextText: 'testitesti',
+        text: 'myyjä, vaihdatko tavaran?',
         options: [
             {
                 text: 'vaihda tavara itemiin',
@@ -79,6 +89,36 @@ const textNodes = [
                 nextText: 3,
             }  
             ]
+    },
+    {
+        id: 3,
+        text: 'olet väsynyt kaiken seikkailun jälkeen',
+        options: [
+            {
+                text: 'tutki kuitenkin enemmän',
+                nextText: 4,
+            },
+            {
+                text: 'käy nukkumaan maahan',
+                nextText: 5,
+            },
+            {
+                text: 'etsi läheinen kaupunki ja nuku',
+                nextText: 6,
+            }
+
+        ]
+    },
+    {
+        id: 4,
+        text: 'Olet niin väsynyt, että nukahdat ja monsteri syö sinut',
+        options: [
+            {
+                text: 'Aloita uudestaan',
+                nextText: -1
+            }
+
+        ]
     }
 ]
 
