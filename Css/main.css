@@ -4,19 +4,20 @@
 }
 
 :root {
-    --background: black;
-    --secondary-bg: gray;
-    --text-color: white;
-    --button-bg: lime;
-    --button-border: green;
-    --btn-secondary-border: black;
-
+    --background: #00090D;
+    --secondary-bg: rgba(1, 58, 64, 0.4);
+    --text-color: #90A8A8;
+    --button-bg: #024959;
+    --button-border: #026873;
+    --btn-secondary-border: #181518;
+    --box-shadow: #012326;
 }
 
-font {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
+html {
+    font-family: "IM Fell DW Pica", serif;
+    font-size: 25px;
     color: var(--text-color);
+    text-shadow: 2px 2px 5px var(--btn-secondary-border);
 }
 
 body {
@@ -29,16 +30,21 @@ body {
     height: 100vh;
     font: inherit;
     background-color: var(--background);
-    color: var(--text-color);
+    background-image: url(/Images/UndertheSea-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .container {
     width: 800px;
     max-width: 80%;
     background-color: var(--secondary-bg);
-    padding: 10px;
+    backdrop-filter: blur(10px) saturate(180%);
+    padding: 25px;
     border-radius: 5px;
-    box-shadow: 0 0 10px 2px;
+    box-shadow: 0 0 10px 2px var(--box-shadow);
+    text-align: center;
 }
 
 .btn-grid {
@@ -53,8 +59,12 @@ body {
     border: 1px solid var(--button-border);
     border-radius: 5px;
     padding: 5px 10px;
+    font: inherit;
     color: var(--text-color);
+    font-size: 0.8rem;
+    font-weight: 400;
     outline: none;
+    text-shadow: 2px 2px 5px var(--btn-secondary-border);
 }
 
 .btn:hover {
