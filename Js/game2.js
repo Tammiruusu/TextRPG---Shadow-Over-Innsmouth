@@ -54,35 +54,39 @@ function selectOption(option) {
 const textNodes = [
     {
         id: 1,
-        text: 'You are enjoying a tour around New England, wishing to go sight-seeing, visit antiquarian and everything in between. You had no car of your own, but using the public transport instead, trains, busses and everything in between. But always using the cheapest option and route available to make your money last. You have arrived outside of station ticket office at New-buryport',
+        text: 'edessässi on tavara',
         options: [
             {
-                text: 'Head inside the office to figure out where to go from here',
-                setState: {information: true},
+                text: 'ota tavara',
+                setState: {Tavara: true},
                 nextText: 2,
             },
             {
-                text: 'Look outside the office first',
-                nextText: 3,
+                text: 'älä ote tavaraa',
+                nextText: 2,
             }
 
         ]
     },
     {
         id: 2,
-        text: 'Inside the station you find a shrew-faced agent, who was symphatetic towards your economy choices. “You could take that old buss, I suppose. It goes through Innsmouth and so many people don’t like it. But it’s cheap enough. Nobody, but those Innsmouth folk uses it. The next shift runs tomorrow morning however.” Innsmouth has not been listed in any of the maps or guides you have browzed on your trip so far. The agent looks like they might have more information about Innsmouth, do you wish to hear it?',
+        text: 'myyjä, vaihdatko tavaran?',
         options: [
             {
-                text: 'Hear more about Innsmouth',
-                nextText: 4,
-            },
-            {
-                text: 'Head back outside and find the buss',
+                text: 'vaihda tavara itemiin',
+                requiredState: (currentState) => currentState.Tavara,
+                setState: { tavara: false, item: true },
                 nextText: 3,
             },
             {
-                text: 'Look around the town instead',
-                nextText: 7,
+                text: 'vaihda tavara tokeniin',
+                requiredState: (currentState) => currentState.Tavara,
+                setState: { tavara: false, token: true },
+                nextText: 3,
+            },
+            {
+                text: 'Älä vaihda mitään',
+                nextText: 3,
             }  
             ]
     },
