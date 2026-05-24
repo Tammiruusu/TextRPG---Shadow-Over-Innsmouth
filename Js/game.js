@@ -107,11 +107,129 @@ const textNodes = [
     },
     {
         id: 4,
-        text: 'Olet niin väsynyt, että nukahdat ja monsteri syö sinut',
+        text: 'The agent is more than happy to keep talking about Innsmouth. “There are more empty houses than there are people there. And only business in town is fishing and lobstering. There are no mills anymore, except for one gold refinery. The man who owned it used to be really, really rich, but he liked to stay close to his home. I heard he developed some skin disease or deformity late in life and that keeps him out of sight. Grandson to captain Obed Marsh, who founded the business. His mother seems to be some kind of foreigner, they say South Sea islander. Everyone outside of Innsmouth try to hide any family connections to the weird town. Some even whisper about devil worship, that the old captain Marsh made deals with devils and bringing imps to live in Innsmouth. Or about some aweful sacrifices. Some of the old timers call this black reef off the coast, Devil Reef they call it. And that is where the old Captain made his dealings with the deamons. There was also this big epidemic back in the day, where over half of the folks in Innsmouth was carried off. They never did quite figure out what the trouble was with that.” The agent finishes his tales more than happily with all the town gossip they have heard. What do you wish to do next?',
         options: [
             {
-                text: 'Aloita uudestaan',
-                nextText: -1
+                text: 'Head back outside and find the buss',
+                nextText: 3,
+            },
+            {
+                text: 'Look around the town',
+                nextText: 7,
+            }
+
+        ]
+    },
+    {
+        id: 5,
+        text: 'olet väsynyt kaiken seikkailun jälkeen',
+        options: [
+            {
+                text: 'tutki kuitenkin enemmän',
+                nextText: 4,
+            },
+            {
+                text: 'käy nukkumaan maahan',
+                nextText: 5,
+            },
+            {
+                text: 'etsi läheinen kaupunki ja nuku',
+                nextText: 6,
+            }
+
+        ]
+    },
+    {
+        id: 6,
+        text: 'olet väsynyt kaiken seikkailun jälkeen',
+        options: [
+            {
+                text: 'tutki kuitenkin enemmän',
+                nextText: 4,
+            },
+            {
+                text: 'käy nukkumaan maahan',
+                nextText: 5,
+            },
+            {
+                text: 'etsi läheinen kaupunki ja nuku',
+                nextText: 6,
+            }
+
+        ]
+    },
+    {
+        id: 7,
+        text: 'olet väsynyt kaiken seikkailun jälkeen',
+        options: [
+            {
+                text: 'tutki kuitenkin enemmän',
+                nextText: 4,
+            },
+            {
+                text: 'käy nukkumaan maahan',
+                nextText: 5,
+            },
+            {
+                text: 'etsi läheinen kaupunki ja nuku',
+                nextText: 6,
+            }
+
+        ]
+    },
+    {
+        id: 8,
+        text: 'olet väsynyt kaiken seikkailun jälkeen',
+        options: [
+            {
+                text: 'tutki kuitenkin enemmän',
+                nextText: 4,
+            },
+            {
+                text: 'käy nukkumaan maahan',
+                nextText: 5,
+            },
+            {
+                text: 'etsi läheinen kaupunki ja nuku',
+                nextText: 6,
+            }
+
+        ]
+    },
+    {
+        id: 9,
+        text: 'olet väsynyt kaiken seikkailun jälkeen',
+        options: [
+            {
+                text: 'tutki kuitenkin enemmän',
+                nextText: 4,
+            },
+            {
+                text: 'käy nukkumaan maahan',
+                nextText: 5,
+            },
+            {
+                text: 'etsi läheinen kaupunki ja nuku',
+                nextText: 6,
+            }
+
+        ]
+    },
+    {
+        id: 10,
+        text: 'olet väsynyt kaiken seikkailun jälkeen',
+        options: [
+            {
+                text: 'tutki kuitenkin enemmän',
+                nextText: 4,
+            },
+            {
+                text: 'käy nukkumaan maahan',
+                nextText: 5,
+            },
+            {
+                text: 'etsi läheinen kaupunki ja nuku',
+                nextText: 6,
             }
 
         ]
