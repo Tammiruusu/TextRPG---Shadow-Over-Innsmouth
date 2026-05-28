@@ -116,25 +116,25 @@ const textNodes = [
             {
                 text: 'Look around the town',
                 nextText: 7,
+            },
+            {
+                text: 'The agent looks like he might have a little more to share',
+                nextText: 5,
             }
 
         ]
     },
     {
         id: 5,
-        text: 'olet väsynyt kaiken seikkailun jälkeen',
+        text: 'You nod along and the agent catches on, adding a few more gossips they have heard about the town. “There is this odd quality to the folks from Innsmouth, you’ll notice it a little in Sargent if you take his bus. Some of the Innsmouth folk have narrow heads with flat noses and bulgy, stary eyes that never seem to shut. Their skin looks rough and scabby, and the side of their neck are all shrivelled or creased up. Get bald, too, very young. I don’t think I have ever seen anyone old that is from Innsmouth. It is odd though how there seems to be plenty of fishes in Innsmouth waters while there is none to go by around the rest of the harbours. There is also a hotel in Innsmouth called the Gilman House. Though there was an inspector friend of mine staying at the hotel a while back, said he heard noises coming from the rest of the rooms. But those rooms were empty. He said he didn’t dare to undress or go to sleep, just waited up and left the first thing in the crack of dawn.” with that the agent finished, where would you like to head next?',
         options: [
             {
-                text: 'tutki kuitenkin enemmän',
-                nextText: 4,
+                text: 'Head back outside and find the buss',
+                nextText: 3,
             },
             {
-                text: 'käy nukkumaan maahan',
-                nextText: 5,
-            },
-            {
-                text: 'etsi läheinen kaupunki ja nuku',
-                nextText: 6,
+                text: 'Look around the town',
+                nextText: 7,
             }
 
         ]
