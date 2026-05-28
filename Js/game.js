@@ -160,19 +160,20 @@ const textNodes = [
     },
     {
         id: 7,
-        text: 'olet väsynyt kaiken seikkailun jälkeen',
+        text: 'You wander around town, when you spot a brilliant looking Historical society. Maybe you find some interesting pieces on display there?',
         options: [
             {
-                text: 'tutki kuitenkin enemmän',
+                text: 'Return back to the Ticket Station instead',
                 nextText: 4,
             },
             {
-                text: 'käy nukkumaan maahan',
+                text: 'Visit the Historical Society',
                 nextText: 5,
             },
             {
-                text: 'etsi läheinen kaupunki ja nuku',
-                nextText: 6,
+                text: 'Look around town to find a place to stay for the night',
+                requiredState: (currentState) => currentState.information, 
+                nextText: 11,
             }
 
         ]
