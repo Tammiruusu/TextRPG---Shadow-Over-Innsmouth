@@ -180,21 +180,16 @@ const textNodes = [
     },
     {
         id: 8,
-        text: 'olet väsynyt kaiken seikkailun jälkeen',
+        text: 'There are strange jewelry on display, claimed to be from Innsmouth. Beneath the jewelry is also a mention, that more specimen are displayed at Miskatonic University in Arkham. As you keep staring at the peculiar jewelry, an odd feeling starts to take over your mind. The large, oddly proportioned thing evidently meant to be a tiara keeps pulling your gaze to it. Approach the Tiara?',
         options: [
             {
-                text: 'tutki kuitenkin enemmän',
-                nextText: 4,
+                text: 'Ignore the odd sensation at the back of your mind and finish the tour. Head back to ticket Station',
+                nextText: 10,
             },
             {
-                text: 'käy nukkumaan maahan',
-                nextText: 5,
-            },
-            {
-                text: 'etsi läheinen kaupunki ja nuku',
-                nextText: 6,
+                text: 'Approach the Tiara for a closer look',
+                nextText: 9,
             }
-
         ]
     },
     {
