@@ -206,21 +206,16 @@ const textNodes = [
     },
     {
         id: 10,
-        text: 'olet väsynyt kaiken seikkailun jälkeen',
+        text: 'You arrive back at the ticket Station, the weary, ominous buss still parked there. Do you wish to head inside and talk to the Agent or try and chat with the buss driver?',
         options: [
             {
-                text: 'tutki kuitenkin enemmän',
-                nextText: 4,
-            },
-            {
-                text: 'käy nukkumaan maahan',
-                nextText: 5,
-            },
-            {
-                text: 'etsi läheinen kaupunki ja nuku',
+                text: 'Approach the buss and look for the driver',
                 nextText: 6,
+            },
+            {
+                text: 'Head inside the ticket Station and talk to the agent',
+                nextText: 2,
             }
-
         ]
     }
 ]
