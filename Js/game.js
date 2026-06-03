@@ -53,6 +53,7 @@ function selectOption(option) {
 
 const textNodes = [
     {
+        //PART 1 ALKAA!!
         id: 1,
         text: 'You are enjoying a tour around New England, wishing to go sight-seeing, visit antiquarian and everything in between. You had no car of your own, but using the public transport instead, trains, busses and everything in between. But always using the cheapest option and route available to make your money last. You have arrived outside of station ticket office at New-buryport',
         options: [
@@ -206,6 +207,60 @@ const textNodes = [
     },
     {
         id: 10,
+        text: 'You arrive back at the ticket Station, the weary, ominous buss still parked there. Do you wish to head inside and talk to the Agent or try and chat with the buss driver?',
+        options: [
+            {
+                text: 'Approach the buss and look for the driver',
+                nextText: 6,
+            },
+            {
+                text: 'Head inside the ticket Station and talk to the agent',
+                nextText: 2,
+            }
+        ]
+    },
+    {
+        id: 11,
+        text: 'You arrive back at the ticket Station, the weary, ominous buss still parked there. Do you wish to head inside and talk to the Agent or try and chat with the buss driver?',
+        options: [
+            {
+                text: 'Approach the buss and look for the driver',
+                nextText: 12,
+            }
+        ]
+        //PART 1 LOPPUU!
+    },
+    {
+        //PART 2 ALKAA!!!
+        id: 12,
+        text: 'You arrive back at the ticket Station, the weary, ominous buss still parked there. Do you wish to head inside and talk to the Agent or try and chat with the buss driver?',
+        options: [
+            {
+                text: 'Approach the buss and look for the driver',
+                nextText: 6,
+            },
+            {
+                text: 'Head inside the ticket Station and talk to the agent',
+                nextText: 2,
+            }
+        ]
+    },
+    {
+        id: 13,
+        text: 'You arrive back at the ticket Station, the weary, ominous buss still parked there. Do you wish to head inside and talk to the Agent or try and chat with the buss driver?',
+        options: [
+            {
+                text: 'Approach the buss and look for the driver',
+                nextText: 6,
+            },
+            {
+                text: 'Head inside the ticket Station and talk to the agent',
+                nextText: 2,
+            }
+        ]
+    },
+    {
+        id: 14,
         text: 'You arrive back at the ticket Station, the weary, ominous buss still parked there. Do you wish to head inside and talk to the Agent or try and chat with the buss driver?',
         options: [
             {
