@@ -196,21 +196,12 @@ const textNodes = [
     },
     {
         id: 9,
-        text: 'olet väsynyt kaiken seikkailun jälkeen',
+        text: 'You can feel a gasp escape between your lips at the strange, unearthly splendour of the alien, opulent phantasy that rested there on a purple velvet cushion. Even this close it is hard to describe what you are gazing at. The longer you stare upon the strange tiara, the more it begins to fascinate you and yet there is this feeling of unease at the back of your mind. The patterns of the jewelry all hinted of remote secrets and unimaginable abysses in time and space, and the monotonously aquatic nature of the reliefs became almost sinister. A curator approached you in the midst of gazing so intently at the tiara and provided you with some background information to the piece, given your keen interest in it. “The item was pawned for a ridiculous sum at a shop in State Street, by a drunken Innsmouth man, who was shortly afterwards killed in a brawl. Our fine Society acquired it directly from the pawnbroker and giving it a display worthy of it’s quality. There are talks about devil-worship in Innsmouth, but those are more based on a peculiar, secret cult which had gained force there and engulfed all the churches in the shadowy town. The cult is called The Esoteric Order of DagonII. The townsfolk have been trying to reclaim this piece for some time, but it is part of our collection here.” the curator, Miss Tilton concluded her explanation.',
         options: [
             {
-                text: 'tutki kuitenkin enemmän',
-                nextText: 4,
-            },
-            {
-                text: 'käy nukkumaan maahan',
-                nextText: 5,
-            },
-            {
-                text: 'etsi läheinen kaupunki ja nuku',
-                nextText: 6,
+                text: 'With new information, head back to ticket Station to seek a route onwards',
+                nextText: 10,
             }
-
         ]
     },
     {
