@@ -144,19 +144,15 @@ const textNodes = [
     },
     {
         id: 6,
-        text: 'olet väsynyt kaiken seikkailun jälkeen',
+        text: 'Up close, you can sort of make out the barely readable sign at the front of the windshield, Arkham - Innsmouth-Newb’port. The driver glances your way, gauging you almost, leaving a shiver running through your spine. There was something odd with the way the driver stared at you with such chilling intensity. “Next shift runs next morning, at 10am.” the buss driver informed you, in case you were looking to board the shabby looking buss. And the price of the ticket was well within your budget, so this should be your ride tomorrow on your tour',
         options: [
             {
-                text: 'tutki kuitenkin enemmän',
-                nextText: 4,
+                text: 'Visit the ticket Station',
+                nextText: 2,
             },
             {
-                text: 'käy nukkumaan maahan',
-                nextText: 5,
-            },
-            {
-                text: 'etsi läheinen kaupunki ja nuku',
-                nextText: 6,
+                text: 'Look around the town for a place stay for the night',
+                nextText: 7,
             }
 
         ]
