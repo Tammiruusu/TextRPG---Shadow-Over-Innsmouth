@@ -88,19 +88,21 @@ const textNodes = [
     },
     {
         id: 3,
-        text: 'olet väsynyt kaiken seikkailun jälkeen',
+        text: 'You walk outside the station, spotting the dirty grey motor-coach parked there, with barely readable sign on the window. You can spot a balding, sullen man tending to the buss. Talk to him?',
         options: [
             {
-                text: 'tutki kuitenkin enemmän',
-                nextText: 4,
-            },
-            {
-                text: 'käy nukkumaan maahan',
-                nextText: 5,
-            },
-            {
-                text: 'etsi läheinen kaupunki ja nuku',
+                text: 'Approach the Buss driver',
+                setState: {information: true},
                 nextText: 6,
+            },
+            {
+                text: 'Head inside the Station after all',
+                setState: {information: true},
+                nextText: 2,
+            },
+            {
+                text: 'Look around the town instead',
+                nextText: 7,
             }
 
         ]
